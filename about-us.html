@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <style>
+        body{
+            background-image: linear-gradient(#2e2d4f, #1e2432);
+        }
+        .color1 {
+            background-color: red;
+        }
+
+        .color3 {
+            background-color: green;
+        }
+
+        .color2 {
+            background-color: blue;
+        }
+
+        .date-container {
+            position: absolute;
+            height: 38px;
+            z-index: 5;
+            top: 20px;
+        }
+
+        .menu-container {
+            position: absolute;
+            height: 70px;
+            z-index: 4;
+            top: 80px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .menu-container-scroll {
+            position: fixed;
+            height: 70px;
+            z-index: 4;
+            top: 0px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 200);
+        }
+
+        .img-center {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        #search-input {
+            display: none;
+            position: absolute;
+            top: 28px;
+            left: 10px;
+        }
+
+        nav {
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,200) !important;
+}
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header id="home-about">
+        <div id="arrowup" class="arrow-up" onclick="goToTop()">
+            <span class="fa fa-angle-double-up"></span>
+        </div>
+        <!-- قسمت header سایت-->
+        <div class="container-fluid date-container">
+            <div class="container">
+                <!--بخش مربوط به نام خدا و تاریخ سایت و جستجو-->
+            </div>
+        </div>
+        <div id="menucontainer" class="container-fluid menu-container">
+            <div class="container" style="height:100%;border-radius: 10px;">
+
+
+
+                <nav class="navbar navbar-expand-md navbar-dark float-right">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo/iribuIcon.svg" width="30" height="30" alt="">
+                    </a>
+
+                    <!--<a class="navbar-brand text-success" href="#">Darsman</a>-->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">معاونت <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">دانشکده ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">همکاری های علمی و امور بین الملل</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">سایر مراکز</a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">مرکز 1</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">مرکز 2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">مرکز 3</a>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        List
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">نشست های علمی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">هم رسانه</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo/rooya.svg" width="30" height="30" alt="">
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+        <div class="about-title">
+           <hr>
+           <div class="title-text">معرفی دانشگاه صدا و سیما</div> 
+        </div>
+        <!--<div class="img-menu-container">
+            <div class="img-container">
+            <img class="img-slider" src="images/slide.jpg" alt="دانشگاه صدا و سیما">
+
+            </div>
+        </div>-->
+    </header>
+    <!--پایان بخش header-->
+    <section id="home-date">
+        <!-- محتوای section اول -->
+        <!--<h1>Section 1</h1>-->
+
+    </section>
+
+    <section id="home-info">
+        <!-- محتوای section دوم -->
+
+    </section>
+
+    <footer id="home-footer">
+        <!-- قسمت footer سایت-->
+        <div class="footer-container">
+            <div class="footer-box">
+                <h5>دسترسی سریع</h5>
+                <ul>
+                    <li><a href="#">سامانه آموزش مجازی</a></li>
+                    <li><a href="#">معرفی اعضای هیئت علمی</a></li>
+                    <li><a href="#">صندوق رفاه دانشجویان</a></li>
+                    <li><a href="#">پورتال دانشجویی صندوق رفاه</a></li>
+                    <li><a href="#">پست الکترونیکی</a></li>
+                    <li><a href="#">تماس با واحد های دانشگاه</a></li>
+                    <li><a href="#">دریافت لوگوی دانشگاه</a></li>
+                    <li><a href="#">ارتباط مستقیم با رئیس</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>دانشکده ها</h5>
+                <ul>
+                    <li><a href="#">دانشکده دین و رسانه</a></li>
+                    <li><a href="#">دانشکده ارتباطات و رسانه</a></li>
+                    <li><a href="#">دانشکده تولید رادیو و تلویزیون</a></li>
+                    <li><a href="#">دانشکده فنی و مهندسی رسانه</a></li>
+                    <li><a href="#">گروه معارف و دروس اسلامی</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>معاونت ها و ستاد ها</h5>
+                <ul>
+                    <li><a href="#">معاونت فرهنگی و دانشجویی</a></li>
+                    <li><a href="#">مرکز نو آوری کارآفرینی و آموزش های آزاد</a></li>
+                    <li><a href="#">تحصیلات تکمیلی</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>ارتباط با ما</h5>
+                <p>
+                    نشانی: تهران خیابان ولی عصر عج، ابتدای بزرگراه نیایش، دانشگاه صدا و سیمای جمهوری اسلامی ایران<br>
+                    پست الکترونیکی: info@iribu.ac.ir<br>
+                    تلفن آموزش: 22168538-22168540<br>
+                    تلفن روابط عمومی: 22168525<br>
+                    دورنگار:22168525<br>
+                    کد پستی: 1995614317<br>
+                    صندوق پستی: 19395-1747
+                </p>
+            </div>
+            <div class="social-icon">
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-aparat"></span></a>
+                <a href="#"><span class="fa fa-eitaa"></span></a>
+                <a href="#"><span class="fa fa-baleh"></span></a>
+            </div>
+        </div>
+    </footer>
+    <!--بخش جاوا اسکریپت-->
+    <script src="js/news-slider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- اجرای اسکریپت مربوط به ایجاد اسلایدر -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-book-container', {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-defence-container', {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-top-container', {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $("#search").click(function (event) {
+                event.preventDefault();
+                $("#search-input").slideToggle("slow");
+            });
+        });
+        showDefense
+    </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        //اسکریپت مربوط به رویداد ها
+        let slideindex = 1;
+        ShowSlides(slideindex);
+
+        function PlusSlides(n) {
+            ShowSlides(slideindex += n);
+        }
+
+        function CurrentSlide(n) {
+            ShowSlides(slideindex = n);
+        }
+
+        function ShowSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eventSlides");
+            let dots = document.getElementsByClassName("dash");
+            if (n > slides.length) { slideindex = 1 }
+            if (n < 1) { slideindex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideindex - 1].style.display = "block";
+            dots[slideindex - 1].className += " active";
+        }
+        var globalIndex = 3;
+        var globaltime = 3000;
+        function autoEvent() {
+            let numb = document.getElementsByClassName("eventSlides").length;
+            for (let index = 1; index <= numb; index++) {
+
+                setTimeout(() => {
+                    CurrentSlide(index)
+                }, index * globaltime);
+            }
+        }
+        setInterval(() => {
+            autoEvent();
+        }, globalIndex * globaltime);
+
+    </script>
+    <script>
+        //اسکریپت مربوط به کتاب ها
+        let Slideindex = 1;
+        ShowSlides(Slideindex);
+
+        function PlusSlides(n) {
+            ShowSlides(Slideindex += n);
+        }
+
+        function CurrentSlide(n) {
+            ShowSlides(Slideindex = n);
+        }
+
+        function ShowSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eventSlides");
+            let dots = document.getElementsByClassName("dash");
+            if (n > slides.length) { slideindex = 1 }
+            if (n < 1) { slideindex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[Slideindex - 1].style.display = "block";
+            dots[Slideindex - 1].className += " active";
+        }
+        var globalBookIndex = 3;
+        var globalBooktime = 5000;
+        function autoBook() {
+            let numb = document.getElementsByClassName("dash").length;
+            for (let index = 1; index <= numb; index++) {
+
+                setTimeout(() => {
+                    CurrentSlide(index)
+                }, index * globaBookltime);
+            }
+        }
+        setInterval(() => {
+            autoBook();
+        }, globalBookIndex * globalBooktime);
+
+    </script>
+    <!-- اجرای اسکریپت مربوط به ایجاد اسلایدر -->
+    <script>
+
+        function showTab(tabNumber, nTab, nameTab) {
+            // مخفی کردن همه محتواهای تب‌ها
+            for (let i = 1; i <= nTab; i++) {
+                document.getElementById(nameTab + i).classList.remove("activate");
+                document.getElementById(nameTab + i).classList.add("deactivate");
+            }
+
+            // نمایش محتوای تب انتخاب شده
+            document.getElementById(nameTab + tabNumber).classList.add("activate");
+            document.getElementById(nameTab + tabNumber).classList.remove("deactivate");
+        }
+        function changeClass() {
+            if (this.classList == "active") {
+                this.classList.remove("active");
+            } else {
+                this.classList.add("active");
+            }
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll', function(){
+            if(this.scrollY >= 1000){
+                document.getElementById("arrowup").style.display="block";
+            }else{
+                document.getElementById("arrowup").style.display="none";
+            } 
+            if(this.scrollY >= 200){
+                $("#menucontainer").removeClass("menu-container")
+                $("#menucontainer").addClass("menu-container-scroll")
+            }else{
+                $("#menucontainer").removeClass("menu-container-scroll")
+                $("#menucontainer").addClass("menu-container")
+            } 
+
+        })
+        function goToTop(){
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+</body>
+
+</html>

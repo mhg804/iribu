@@ -1,0 +1,108 @@
+    <section id="home-gallery">
+        <!-- محتوای section چهارم -->
+        <div id="event-gallery" class="topics">
+            <h5>نگارخانه</h5>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><span data-toggle="tab" class="tablink active"
+                            style="margin-right:2px;margin-left:2px;"
+                            onclick="showTab(1,2,'gallery')">عکس</span><span>|</span></li>
+                    <li class="nav-item"><span data-toggle="tab" class="tablink"
+                            style="margin-right:2px;margin-left:2px;" onclick="showTab(2,2,'gallery')">ویدئو</span></li>
+                </ul>
+            </div>
+            <!-- اسلایدر خبر -->
+            <div id="gallery1" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- اسلایدها اینجا قرار می‌گیرند -->
+                    <div class="swiper-slide">
+                        <img src="news1.jpg" alt="عکس تصویر ۱">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر ۱</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news2.jpg" alt="عکس تصویر ۲">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر ۲</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news3.jpg" alt="عکس تصویر ۳">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر ۳</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news4.jpg" alt="عکس تصویر 4">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر 4</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news5.jpg" alt="عکس تصویر 5">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر 5</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news6.jpg" alt="عکس تصویر 6">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر 6</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="news7.jpg" alt="عکس تصویر 7">
+                        <i class="fa fa-camera-retro change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر تصویر 7</p>
+                    </div>
+                    <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                </div>
+                <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div id="gallery2" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- اسلایدها اینجا قرار می‌گیرند -->
+                    <div class="swiper-slide">
+                        <img src="vid1.jpg" alt="عکس ویدئو ۱">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو ۱</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid2.jpg" alt="عکس ویدئو ۲">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو ۲</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid3.jpg" alt="عکس ویدئو ۳">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو ۳</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid4.jpg" alt="عکس ویدئو 4">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو 4</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid5.jpg" alt="عکس ویدئو 5">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو 5</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid6.jpg" alt="عکس ویدئو 6">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو 6</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="vid7.jpg" alt="عکس ویدئو 7">
+                        <i class="fa fa-video-camera change-opacity"></i>
+                        <p class="swiper-slide-text">توضیح مختصر ویدئو 7</p>
+                    </div>
+                    <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                </div>
+                <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+
+    </section>

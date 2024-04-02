@@ -1,0 +1,3013 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانشگاه صدا و سیما</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <style>
+        
+        .color1 {
+            background-color: red;
+        }
+
+        .color3 {
+            background-color: green;
+        }
+
+        .color2 {
+            background-color: blue;
+        }
+
+        .date-container {
+            position: absolute;
+            height: 38px;
+            z-index: 5;
+            top: 20px;
+        }
+
+        .menu-container {
+            position: absolute;
+            height: 70px;
+            z-index: 4;
+            top: 80px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .menu-container-scroll {
+            position: fixed;
+            height: 70px;
+            z-index: 4;
+            top: 0px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 200);
+        }
+
+        .img-center {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        #search-input {
+            display: none;
+            position: absolute;
+            top: 28px;
+            left: 10px;
+        }
+
+        nav {
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,200) !important;
+}
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header id="home-header">
+        <div id="arrowup" class="arrow-up" onclick="goToTop()">
+            <span class="fa fa-angle-double-up"></span>
+        </div>
+        <!-- قسمت header سایت-->
+        <div class="container-fluid date-container">
+            <div class="container">
+                <!--بخش مربوط به نام خدا و تاریخ سایت و جستجو-->
+                <div class="row">
+                    <!--بخش مربوط به ورود کاربر-->
+                    <div class="col-md-4">
+                        <a id="login" href="#">ورود کاربر</a>
+                        <span id="space">-</span>
+                        <a id="lang" href="#">EN</a>
+                    </div>
+                    <!--بسم الله الرحمن الرحیم-->
+                    <div class="col-md-4" style="display:flex;align-content:center;">
+                        <img class="img-center" src="images/svg/bism.svg" alt="بسم الله الرحمن الرحیم">
+                    </div>
+                    <!--جستجو-->
+                    <div class="col-md-4" style="position: relative;">
+                        <form>
+                            <input id="search-input" class="form-control" type="text" placeholder="جستجو">
+                            <button id="search" style="position:absolute;left:0px;"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menucontainer" class="container-fluid menu-container">
+            <div class="container" style="height:100%;border-radius: 10px;">
+
+
+
+                <nav class="navbar navbar-expand-md navbar-dark float-right">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo/iribuIcon.svg" width="30" height="30" alt="">
+                    </a>
+
+                    <!--<a class="navbar-brand text-success" href="#">Darsman</a>-->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">معاونت <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">دانشکده ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">همکاری های علمی و امور بین الملل</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">سایر مراکز</a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">مرکز 1</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">مرکز 2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">مرکز 3</a>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        List
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">نشست های علمی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">هم رسانه</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo/rooya.svg" width="30" height="30" alt="">
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+        <div class="img-menu-container">
+            <div class="img-container">
+            <!--<img class="img-slider" src="images/slide.jpg" alt="دانشگاه صدا و سیما">-->
+                <video autoplay muted loop id="iribuVideo">
+                    <source src="video/vido.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+            </div>
+        </div>
+        <div class="my-container-fluid curve-slide">
+
+        </div>
+    </header>
+    <!--پایان بخش header-->
+    <section id="home-slider">
+        <!-- محتوای section اول -->
+        <!--<h1>Section 1</h1>-->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides faded">
+                <div class="numbertext">1 / 3</div>
+                <img class="img-slide" src="images/img_nature_wide.jpg">
+                <div class="titr-text">تیتر اسلاید اول </div>
+                <div class="comment-text">توضیحات اسلاید اول در این قسمت قرار می گیرد.</div>
+            </div>
+
+            <div class="mySlides faded">
+                <div class="numbertext">2 / 3</div>
+                <img class="img-slide" src="images/img_snow_wide.jpg">
+                <div class="titr-text">تیتر اسلاید دوم </div>
+                <div class="comment-text">توضیحات اسلاید دوم در این قسمت قرار می گیرد.</div>
+            </div>
+
+            <div class="mySlides faded">
+                <div class="numbertext">3 / 3</div>
+                <img class="img-slide" src="images/img_mountains_wide.jpg">
+                <div class="titr-text">تیتر اسلاید سوم </div>
+                <div class="comment-text">توضیحات اسلاید سوم در این قسمت قرار می گیرد.</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="home-news">
+        <!-- محتوای section دوم -->
+
+        <!--این قسمت مربوط به تب ها می باشد-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md 12 tabs-container">
+                    <ul id="nav-tab" class="nav nav-tabs">
+                        <li class="nav-item"><span>|</span><span class="tablink active" data-toggle="tab"
+                                onclick="showTab(1,6,'tabcontent')">اخبار</span></li>
+                        <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                onclick="showTab(4,6,'tabcontent')">اطلاعیه ها</span></li>
+                        <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                onclick="showTab(6,6,'tabcontent')">هیئت علمی</span></li>
+                        <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                onclick="showTab(2,6,'tabcontent')">جلسات دفاع</span></li>
+                        <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                onclick="showTab(3,6,'tabcontent')">کانون ها و تشکل ها</span></li>
+                        <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                onclick="showTab(5,6,'tabcontent')">دانش آموختگان برتر</span><span>|</span></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tabs-content">
+            <!--بخش تب های خبری-->
+            <div id="tabcontent1" class="activate">
+                <div class="lines1">
+                    <span class="inside-titr">
+                        <h3>اخبار</h3>
+                    </span>
+                    <div class="newsbox-container">
+                        <div class="news-right">
+                            <div class="large-news-box">
+                                <div class="large-news-box-img-cont">
+                                    <img src="news1.jpg" alt="news1">
+                                </div>
+                                <div class="large-news-box-txt-cont">
+                                    <div class="news-txt-titr">
+                                        <h5> از تنور سرد انتخابات نباید انتظار نان برشته داشت از تنور سرد انتخابات نباید
+                                            انتظار نان برشته داشت از تنور سرد انتخابات نباید انتظار نان برشته داشت از
+                                            تنور سرد انتخابات نباید انتظار نان برشته داشت </h5>
+                                    </div>
+                                    <div class="news-txt-content">
+                                        <p>
+                                            سخنگوی حزب اعتدال و توسعه گفت: آن چیزی که امروز دستگاه‌های اجرایی و نظارتی
+                                            خیلی به آن امیدوار هستند، یک سیاهی لشگر از کاندیداهایی است که تأیید صلاحیت
+                                            شدند یا به تعبیری کاندیداهای پوشالی هستند که این افراد هیچ‌گاه نمی‌توانند
+                                            رغبت مردم را جهت حضور در انتخابات فراهم کنند.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-news-box">
+                                <div class="small-news-box-cont">
+                                    <div class="small-news-img">
+                                        <img src="news2.jpg" alt="small pic">
+                                    </div>
+                                    <div class="small-news-text">
+                                        <div class="small-news-text-titr">
+                                            <h6> در گفت‌وگو با ایلنا مطرح شد: </h6>
+                                        </div>
+                                        <div class="small-news-text-content">
+                                            <p>
+                                                عضو کمیسیون بهداشت و درمان مجلس شورای اسلامی با اشاره به آتش‌سوزی
+                                                بیمارستان گاندی گفت: قطعا اهمالی از سوی مسئولان این بیمارستان صورت گرفته
+                                                است و باید پاسخگوی این مسئله باشند.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-news-box-cont">
+                                    <div class="small-news-img">
+                                        <img src="news3.jpg" alt="small pic">
+                                    </div>
+                                    <div class="small-news-text">
+                                        <div class="small-news-text-titr">
+                                            <h6> سخنگوی اقتصادی دولت در نشست خبری: </h6>
+                                        </div>
+                                        <div class="small-news-text-content">
+                                            <p>
+                                                سخنگوی اقتصادی دولت گفت: قطعا اگر درآمدهای پایدار برای تامین مصارف وجود
+                                                داشت، دولت از مصوبات مجلس استقبال می‌کرد،اما مسئله این است که منابع
+                                                پایدار غیر تورم زا برای این مصارف وجود ندارد. امیدواریم در مراحل پایانی
+                                                بررسی بودجه سال آینده، تجدید نظر نسبت به تحمیل ناترازی‌ها رقم بخورد.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-news-box-cont">
+                                    <div class="small-news-img">
+                                        <img src="news4.jpg" alt="small pic">
+                                    </div>
+                                    <div class="small-news-text">
+                                        <div class="small-news-text-titr">
+                                            <h6>در گفت‌وگو با ایلنا مطرح شد: </h6>
+                                        </div>
+                                        <div class="small-news-text-content">
+                                            <p>نایب رییس اتحادیه طلا و جواهر گفت: از صبح امروز تا کنون نرخ طلا و سکه
+                                                چندین بار تغییر کرده اما تاکنون قیمت تمام سکه به ٣۴ میلیون و ١٠٠ هزار
+                                                تومان رسیده است </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-left">
+                            <div class="news-left-top">
+                                <div class="heading-title">
+                                    <h5>
+                                        <span>
+                                            آخرین اخبار
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="latest-news">
+                                    <ul>
+                                        <li><a href="#">واکنش سید حسن خمینی به کشته شدن سه سرباز آمریکایی در اردن </a>
+                                        </li>
+                                        <li><a href="#">دف‌نوازان استادیوم قطر معرف زن ایرانی نیستند </a></li>
+                                        <li><a href="#">انقلاب مثل هوای بهاری است، نمی‌شود جلویش را گرفت </a></li>
+                                        <li><a href="#">درباره استیضاح وزیر نفت چیزی نشنیده‌ام </a></li>
+                                        <li><a href="#">سمت و سوی بازار خودرو با وجود گرانی دلار </a></li>
+                                        <li><a href="#">مجادله احزاب مجارستان بر سر ورودِ کارگرانِ خارجی </a></li>
+                                        <li><a href="#">مجادله احزاب مجارستاانتظار بازنشستگان برای واریز پاداش خدمت در
+                                                چند روز آینده ن بر سر ورودِ کارگرانِ خارجی </a></li>
+                                        <li><a href="#">پیشنهاد بودجه ۱۴ هزار میلیاردی برای حوزه اجتماعی و فرهنگی
+                                                شهرداری تهران </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-left-bottom">
+                                <div class="heading-title">
+                                    <h5>
+                                        <span>
+                                            پر بازدید ترین ها
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div class="top-news">
+                                    <ul>
+                                        <li><a href="#">جامعه به فیلم‌های امیدبخش نیاز دارد </a></li>
+                                        <li><a href="#">وقوع انفجار در ‌یک نیروگاه حرارتی در استان آیچی ژاپن </a></li>
+                                        <li><a href="#">بایدن مقصر حمله به پایگاه نیروهای آمریکایی در اردن است </a></li>
+                                        <li><a href="#">کلید امنیت اسرائیل و منطقه، تعامل با ایران است </a></li>
+                                        <li><a href="#">پرداخت پاداش پایان خدمت بازنشستگان تا چند روز آینده </a></li>
+                                        <li><a href="#">بکارگیری اتباع افغانی در کرمانشاه پیگرد قانونی دارد </a></li>
+                                        <li><a href="#">نباید هزینه تفریح مردم در قزوین گران شود </a></li>
+                                        <li><a href="#">ترکیب احتمالی ایران مقابل سوریه با یک ابهام بزرگ </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- اسلایدر جلسات دفاع -->
+            <div id="tabcontent2" class="deactivate">
+                <div class="lines2">
+                    <span class="inside-titr">
+                        <h3 id="defense">جلسات دفاع</h3>
+                    </span>
+                    <div class="defense-tabs">
+                        <ul id="nav-tab" class="nav nav-tabs">
+                            <li class="nav-item"><span class="tablink active" data-toggle="tab"
+                                    onclick="showTab(1,4,'defa-tab')">ارتباطات و
+                                    رسانه</span></li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(2,4,'defa-tab')">تولید رادیو و تلویزیون</span>
+                            </li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(3,4,'defa-tab')">هنر های دیجیتال</span></li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(4,4,'defa-tab')">فنی و مهندسی</span></li>
+                        </ul>
+                    </div>
+                    <!-- جلسات دفاع-->
+                    <div>
+                        <!-- اسلایدها اینجا قرار می‌گیرند -->
+                        <div id="defa-tab1" class="swiper-container activate">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۱">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر ۲">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۳">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="defa-tab2" class="swiper-container deactivate">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۱">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر ۲">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۳">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="defa-tab3" class="swiper-container deactivate">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۱">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر ۲">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۳">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="defa-tab4" class="swiper-container deactivate">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۱">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر ۲">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر ۳">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def1.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/def2.png" alt="عکس تصویر 4">
+                                    <div class="swiper-slide-box">
+                                        <h6>جلسه دفاع حضوری از پایان نامه</h6>
+                                        <h6>معصومه قاسمی</h6>
+                                        <p>
+                                            <span><b>عنوان پایان نامه:</b></span>
+                                            بازنمایی اعتیاد زنان به مواد مخدر در سریال های تلویزیونی سیمای جمهوری اسلامی
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+
+                        <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <!--جلسات دفاع-->
+                </div>
+            </div>
+            <div id="tabcontent3" class="deactivate">
+
+                <div class="lines2">
+                    <div class="lines2">
+                        <span class="inside-titr">
+                            <h3>کانون ها و تشکل ها</h3>
+                        </span>
+                        <div class="centers-content">
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers1.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                    <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                    </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye" style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers2.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                        <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                        </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye" style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers3.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                        <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                        </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye" style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers4.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                        <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                        </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye" style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers5.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                        <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                        </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye" style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <div class="centers-box">
+                                <div class="centers-img">
+                                    <img src="centers6.jpg" alt="">
+                                </div>
+                                <div class="centers-titr">
+                                    <h6 href="#">
+                                        <a href="#">اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</a>
+                                        </h6>
+                                </div>
+                                <div class="centers-text">
+                                    <p>
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                        قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    </p>
+                                </div>
+                                <div class="centers-star">
+                                    <span style="color:white;">امتیاز شما:</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span style="color:white;">&nbsp&nbsp|&nbsp&nbsp</span>
+                                    <span class="fa fa-eye"  style="color:white;"></span>
+                                    <span style="color:white;">589</span>
+                                </div>
+                            </div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- اسلایدر کانون ها و تشکل ها -->
+            <!-- اسلایدر اطلاعیه ها -->
+            <div id="tabcontent4" class="deactivate">
+
+                <div class="lines3">
+                    <span class="inside-titr">
+                        <h3>اطلاعیه ها</h3>
+                    </span>
+                    <div class="notification-content">
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                        <div class="notification-box">
+                            <div class="notification-icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <div class="notification-titr">
+                                <h5>اطلاعیه مهم در خصوص پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما</h5>
+                            </div>
+                            <div class="notification-text">
+                                <p>
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                    قابل توجه پذیرفته شدگان رشته های شرایط خاص دانشگاه صدا و سیما در سال 1402
+                                </p>
+                            </div>
+                            <button class="notification-more">بیشتر</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- اسلایدر اطلاعیه ها -->
+            <!-- اسلایدر دانش آموختگان برتر -->
+            <div id="tabcontent5" class="deactivate">
+                <div class="lines5">
+                    <span class="inside-titr">
+                        <h3>دانش آموختگان برتر</h3>
+                    </span>
+                    <div class="top-student-tabs">
+                        <ul id="nav-tab" class="nav nav-tabs">
+                            <li class="nav-item"><span>|</span><span class="tablink active" data-toggle="tab"
+                                    onclick="showTab(1,5,'top-students')">دانشکده تولید</span></li>
+                            <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                    onclick="showTab(2,5,'top-students')">دانشکده ارتباطات</span></li>
+                            <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                    onclick="showTab(3,5,'top-students')">دانشکده فنی</span></li>
+                            <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                    onclick="showTab(4,5,'top-students')">دانشکده دیجیتال</span></li>
+                            <li class="nav-item"><span>|-|</span><span class="tablink" data-toggle="tab"
+                                    onclick="showTab(5,5,'top-students')">دانشکده دین و رسانه</span></li>
+    
+                        </ul>
+                    </div>
+                    <div class="tabs-content">
+                        <div id="top-students1" class="swiper-top-container activate">
+                            <div class="swiper-wrapper">
+                                <!-- اسلایدها اینجا قرار می‌گیرند -->
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st1.jpg" alt="عکس تصویر ۱">
+                                        <h6>
+                                            <a href="#">
+                                                سید احمد مصطفوی
+                                            </a>
+                                        </h6>
+                                        <span>فارغ التحصیل دانشکده تولید </span>
+                                        <span class="educate">تحصیلات</span>
+                                        <p>
+                                            تحصیلات: کارشناسی ارشد<br>
+                                            رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                            ورودی:بهمن 93<br>
+                                            عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                        </p>
+                                        <span class="resume">سوابق حرفه ای</span>
+                                        <p>
+                                            همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                        </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st2.jpg" alt="عکس تصویر ۲">
+                                    <h6>
+                                        <a href="#">
+                                            امین بایروند
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st3.jpg" alt="عکس تصویر ۳">
+                                    <h6>
+                                        <a href="#">
+                                            ایرانمهر سلیمی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st4.jpg" alt="عکس تصویر 4">
+                                    <h6>
+                                        <a href="#">
+                                            امید درویشی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده دین و رسانه </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st5.jpg" alt="عکس تصویر 5">
+                                    <h6>
+                                        <a href="#">
+                                            امیر مهدی اخروی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تولید </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st6.jpg" alt="عکس تصویر 6">
+                                    <h6>
+                                        <a href="#">
+                                            توحید سلطانی چوبقلو
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st7.jpg" alt="عکس تصویر 7">
+                                    <h6>
+                                        <a href="#">
+                                            محمد رضا چاکرالحسینی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                            </div>
+                            <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+                        </div>
+                        <div id="top-students2" class="swiper-top-container deactivate">
+                            <div class="swiper-wrapper">
+                                <!-- اسلایدها اینجا قرار می‌گیرند -->
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st1.jpg" alt="عکس تصویر ۱">
+                                        <h6>
+                                            <a href="#">
+                                                سید احمد مصطفوی
+                                            </a>
+                                        </h6>
+                                        <span>فارغ التحصیل دانشکده تولید </span>
+                                        <span class="educate">تحصیلات</span>
+                                        <p>
+                                            تحصیلات: کارشناسی ارشد<br>
+                                            رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                            ورودی:بهمن 93<br>
+                                            عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                        </p>
+                                        <span class="resume">سوابق حرفه ای</span>
+                                        <p>
+                                            همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                        </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st2.jpg" alt="عکس تصویر ۲">
+                                    <h6>
+                                        <a href="#">
+                                            امین بایروند
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st3.jpg" alt="عکس تصویر ۳">
+                                    <h6>
+                                        <a href="#">
+                                            ایرانمهر سلیمی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st4.jpg" alt="عکس تصویر 4">
+                                    <h6>
+                                        <a href="#">
+                                            امید درویشی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده دین و رسانه </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st5.jpg" alt="عکس تصویر 5">
+                                    <h6>
+                                        <a href="#">
+                                            امیر مهدی اخروی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تولید </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st6.jpg" alt="عکس تصویر 6">
+                                    <h6>توحید سلطانی چوبقلو</h6>
+                                    <h6>
+                                        <a href="#">
+                                            توحید سلطانی چوبقلو
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st7.jpg" alt="عکس تصویر 7">
+                                    <h6>محمد رضا چاکرالحسینی</h6>
+                                    <h6>
+                                        <a href="#">
+                                            محمد رضا چاکرالحسینی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                            </div>
+                            <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+
+                        </div>
+                        <div id="top-students3" class="swiper-top-container deactivate">
+                            <div class="swiper-wrapper">
+                                <!-- اسلایدها اینجا قرار می‌گیرند -->
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st1.jpg" alt="عکس تصویر ۱">
+                                        <h6>
+                                            <a href="#">
+                                                سید احمد مصطفوی
+                                            </a>
+                                        </h6>
+                                        <span>فارغ التحصیل دانشکده تولید </span>
+                                        <span class="educate">تحصیلات</span>
+                                        <p>
+                                            تحصیلات: کارشناسی ارشد<br>
+                                            رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                            ورودی:بهمن 93<br>
+                                            عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                        </p>
+                                        <span class="resume">سوابق حرفه ای</span>
+                                        <p>
+                                            همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                        </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st2.jpg" alt="عکس تصویر ۲">
+                                    <h6>
+                                        <a href="#">
+                                            امین بایروند
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st3.jpg" alt="عکس تصویر ۳">
+                                    <h6>
+                                        <a href="#">
+                                            ایرانمهر سلیمی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st4.jpg" alt="عکس تصویر 4">
+                                    <h6>
+                                        <a href="#">
+                                            امید درویشی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده دین و رسانه </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st5.jpg" alt="عکس تصویر 5">
+                                    <h6>
+                                        <a href="#">
+                                            امیر مهدی اخروی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تولید </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st6.jpg" alt="عکس تصویر 6">
+                                    <h6>
+                                        <a href="#">
+                                            توحید سلطانی چوبقلو
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st7.jpg" alt="عکس تصویر 7">
+                                    <h6>
+                                        <a href="#">
+                                            محمد رضا چاکرالحسینی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                            </div>
+                            <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+
+                        </div>
+                        <div id="top-students4" class="swiper-top-container deactivate">
+                            <div class="swiper-wrapper">
+                                <!-- اسلایدها اینجا قرار می‌گیرند -->
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st1.jpg" alt="عکس تصویر ۱">
+                                        <h6>
+                                            <a href="#">
+                                                سید احمد مصطفوی
+                                            </a>
+                                        </h6>
+                                        <span>فارغ التحصیل دانشکده تولید </span>
+                                        <span class="educate">تحصیلات</span>
+                                        <p>
+                                            تحصیلات: کارشناسی ارشد<br>
+                                            رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                            ورودی:بهمن 93<br>
+                                            عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                        </p>
+                                        <span class="resume">سوابق حرفه ای</span>
+                                        <p>
+                                            همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                        </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st2.jpg" alt="عکس تصویر ۲">
+                                    <h6>
+                                        <a href="#">
+                                            امین بایروند
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st3.jpg" alt="عکس تصویر ۳">
+                                    <h6>
+                                        <a href="#">
+                                            ایرانمهر سلیمی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st4.jpg" alt="عکس تصویر 4">
+                                    <h6>
+                                        <a href="#">
+                                            امید درویشی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده دین و رسانه </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st5.jpg" alt="عکس تصویر 5">
+                                    <h6>
+                                        <a href="#">
+                                            امیر مهدی اخروی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تولید </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st6.jpg" alt="عکس تصویر 6">
+                                    <h6>
+                                        <a href="#">
+                                           توحید سلطانی چوبقلو 
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st7.jpg" alt="عکس تصویر 7">
+                                    <h6>
+                                        <a href="#">
+                                            محمد رضا چاکر الحسینی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                            </div>
+                            <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+
+                        </div>
+                        <div id="top-students5" class="swiper-top-container deactivate">
+                            <div class="swiper-wrapper">
+                                <!-- اسلایدها اینجا قرار می‌گیرند -->
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st1.jpg" alt="عکس تصویر ۱">
+                                        <h6>
+                                            <a href="#">
+                                                سید احمد مصطفوی
+                                            </a>
+                                        </h6>
+                                        <span>فارغ التحصیل دانشکده تولید </span>
+                                        <span class="educate">تحصیلات</span>
+                                        <p>
+                                            تحصیلات: کارشناسی ارشد<br>
+                                            رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                            ورودی:بهمن 93<br>
+                                            عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                        </p>
+                                        <span class="resume">سوابق حرفه ای</span>
+                                        <p>
+                                            همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                        </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st2.jpg" alt="عکس تصویر ۲">
+                                    <h6>
+                                        <a href="#">
+                                            امین بایروند
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st3.jpg" alt="عکس تصویر ۳">
+                                    <h6>
+                                        <a href="#">
+                                            ایرانمهر سلیمی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st4.jpg" alt="عکس تصویر 4">
+                                    <h6>
+                                        <a href="#">
+                                            امید درویشی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده دین و رسانه </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st5.jpg" alt="عکس تصویر 5">
+                                    <h6>
+                                        <a href="#">
+                                            امیر مهدی اخروی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تولید </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st6.jpg" alt="عکس تصویر 6">
+                                    <h6>
+                                        <a href="#">
+                                            توحید سلطانی چوبقلو
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده ارتباطات </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="top-student-container">
+                                    <img src="st7.jpg" alt="عکس تصویر 7">
+                                    <h6>
+                                        <a href="#">
+                                            محمد رضا چاکرالحسنی
+                                        </a>
+                                    </h6>
+                                    <span>فارغ التحصیل دانشکده تلویزیون و هنر های دیجیتال </span>
+                                    <span class="educate">تحصیلات</span>
+                                    <p>
+                                        تحصیلات: کارشناسی ارشد<br>
+                                        رشته تحصیلی: کارگردانی تلویزیون-مستند<br>
+                                        ورودی:بهمن 93<br>
+                                        عنوان پروژه پایانی: فیلم مستند کوتاه (لوس مختار)<br>
+                                    </p>
+                                    <span class="resume">سوابق حرفه ای</span>
+                                    <p>
+                                        همکاری با سه دوره جشنواره فیلم فجر به عنوان عکاس، همکاری با شرکت طراح طب به عنوان عکاس، فیلمبردار و تدوینگر، همکاری با مرکز همایشهای برج میلاد به عنوان فیلمبردار، همکاری با منظوم؛ مرجع سینما و تلویزیون ایران به عنوان عکاس
+                                    </p>
+                                </div>
+                                </div>
+                                <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                            </div>
+                            <!-- افزودن دکمه‌های ناوبری اسلایدر -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <button class="more-button" style="float: left;">بیشتر</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="tabcontent6" class="deactivate">
+                <div class="lines6">
+                    <span class="inside-titr">
+                        <h3>هیئت علمی</h3>
+                    </span>
+                    <div class="science-committee-tabs">
+                        <ul id="nav-tab" class="nav nav-tabs">
+                            <li class="nav-item"><span class="tablink active" data-toggle="tab"
+                                    onclick="showTab(1,5,'science-committee')">ارتباطات و
+                                    رسانه</span></li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(2,5,'science-committee')">تولید رادیو و
+                                    تلویزیون</span></li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(3,5,'science-committee')">هنر های دیجیتال</span>
+                            </li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(4,5,'science-committee')">فنی و مهندسی</span>
+                            </li>
+                            <li class="nav-item"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="tablink"
+                                    data-toggle="tab" onclick="showTab(5,5,'science-committee')">گروه معارف</span></li>
+                        </ul>
+                    </div>
+                    <div id="science-committee1" class="swiper-container activate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat1.png" alt="عکس تصویر ۱">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>علی اکبر رزم جو</h6>
+                                    <button class="more-button">بیشتر</button>
+
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat2.png" alt="عکس تصویر ۲">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>ابراهیم فتحی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat3.png" alt="عکس تصویر ۳">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>سیاوش صلواتیان</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat4.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>داود نعمتی انارکی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat5.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>محمد قلی میناوند</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/ertebatat6.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده ارتباطات</h6>
+                                    <h6>عباس ناصری طاهری</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="science-committee2" class="swiper-container deactivate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid1.png" alt="عکس تصویر ۱">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>احمد ضابطی جهرمی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid2.png" alt="عکس تصویر ۲">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>حسن خجسته</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid3.png" alt="عکس تصویر ۳">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>مسعود نقاش زاده</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid4.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>سید عماد حسینی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid5.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>احمد رضا معتمدی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/tolid6.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده تولید</h6>
+                                    <h6>شهرام گیل آبادی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="science-committee3" class="swiper-container deactivate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img/digital1.png" alt="عکس تصویر ۱">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>احمد سفلایی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/digital2.png" alt="عکس تصویر ۲">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>حسین میرزاپور</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/digital3.png" alt="عکس تصویر ۳">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>وحید اله موسوی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/digital4.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>حسن زریابی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/digital5.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>سعیده سادات موسوی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/digital6.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده هنرهای دیجیتال</h6>
+                                    <h6>پویا صالحی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="science-committee4" class="swiper-container deactivate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni1.png" alt="عکس تصویر ۱">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>علی جعفری</h6>
+                                    <button class="more-button">بیشتر</button>
+
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni2.png" alt="عکس تصویر ۲">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>محمد ابراهیم صادقی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni3.png" alt="عکس تصویر ۳">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>علیرضا نوروزی</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni4.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>صدیقه بصیر جعفری</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni5.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>معصومه پور صادق</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/fanni6.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی دانشکده فنی</h6>
+                                    <h6>سید محمد رضا رضوی زاده</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="science-committee5" class="swiper-container deactivate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref1.png" alt="عکس تصویر ۱">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>سید محمد مهدی موسوی مهر</h6>
+                                    <button class="more-button">بیشتر</button>
+
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref2.png" alt="عکس تصویر ۲">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>عزیز اله سالاری</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref3.png" alt="عکس تصویر ۳">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>احمد زرنگار</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref4.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>محسن قمر زاده</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref5.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>محمد عامریان</h6>
+                                    <button class="more-button">بیشتر</button>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img/maaref6.png" alt="عکس تصویر 4">
+                                <div class="swiper-slide-box">
+                                    <h6>عضو هیئت علمی گروه معارف </h6>
+                                    <h6>هادی ابراهیمی</h6>
+                                    <button class="more-button">بیشتر</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+            </div>
+            <!-- اسلایدر دانش آموختگان برتر -->
+
+            <!--بخش تب های خبری-->
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <section id="home-event">
+        <!-- محتوای section سوم -->
+
+        <div class="eventshow-container">
+            <div id="event-titr" class="topics">
+                <h5>رویداد ها</h5>
+            </div>
+            <div class="eventSlides eventFade">
+                <img class="img-event-slide" src="images/img/e1.jpg">
+                <div class="event-content">
+                    <div class="event-titr-text">پانزدهمین همایش حکمت مطهر</div>
+                    <div class="event-numberdate">دوشنبه 19 اردیبهشت 1403</div>
+                    <div class="event-issue">
+                        <h6>
+                            موضوع نشست:علوم انسانی در قرن پانزدهم و ضرورت تحول
+                        </h6>
+                    </div>
+
+                    <div class="event-comment-text">دومین همایش علمی رسانه و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به
+                        میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی سازمان صدا و سیما دومین همایش علمی رسانه
+                        و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی
+                        سازمان صدا و سیما برگزار می گردد</div>
+                    <div class="event-submit-rating">
+                        <div style="width: 60%;height: 100%;">
+                            <span>امتیاز شما:</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div style="width: 40%;height:100%;">
+                            <button class="event-button">بیشتر...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eventSlides eventFade">
+                <img class="img-event-slide" src="images/img/e2.jpg">
+                <div class="event-content">
+                    <div class="event-titr-text">پانزدهمین همایش حکمت مطهر</div>
+                    <div class="event-numberdate">دوشنبه 19 اردیبهشت 1403</div>
+                    <div class="event-issue">
+                        <h6>
+                            موضوع نشست:علوم انسانی در قرن پانزدهم و ضرورت تحول
+                        </h6>
+                    </div>
+
+                    <div class="event-comment-text">دومین همایش علمی رسانه و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به
+                        میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی سازمان صدا و سیما دومین همایش علمی رسانه
+                        و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی
+                        سازمان صدا و سیما برگزار می گردد</div>
+                    <div class="event-submit-rating">
+                        <div style="width: 60%;height: 100%;">
+                            <span>امتیاز شما:</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div style="width: 40%;height:100%;">
+                            <button class="event-button">بیشتر...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eventSlides eventFade">
+                <img class="img-event-slide" src="images/img/e3.jpg">
+                <div class="event-content">
+                    <div class="event-titr-text">پانزدهمین همایش حکمت مطهر</div>
+                    <div class="event-numberdate">دوشنبه 19 اردیبهشت 1403</div>
+                    <div class="event-issue">
+                        <h6>
+                            موضوع نشست:علوم انسانی در قرن پانزدهم و ضرورت تحول
+                        </h6>
+                    </div>
+
+                    <div class="event-comment-text">دومین همایش علمی رسانه و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به
+                        میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی سازمان صدا و سیما دومین همایش علمی رسانه
+                        و مکتب سلیمانی ۲۳ و ۲۴ آذر ماه ۱۳۹۹ به میزبانی دانشگاه صدا و سیما در سالن همایش‌های بین‌المللی
+                        سازمان صدا و سیما برگزار می گردد</div>
+                    <div class="event-submit-rating">
+                        <div style="width: 60%;height: 100%;">
+                            <span>امتیاز شما:</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div style="width: 40%;height:100%;">
+                            <button class="event-button">بیشتر...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<a class="prev" onclick="PlusSlides(-1)">❮</a>
+            <a class="next" onclick="PlusSlides(1)">❯</a>-->
+
+        </div>
+        <br>
+
+        <div class="dash-container">
+            <span class="dash" onclick="CurrentSlide(1)"></span>
+            <span class="dash" onclick="CurrentSlide(2)"></span>
+            <span class="dash" onclick="CurrentSlide(3)"></span>
+        </div>
+
+        </div>
+
+    </section>
+
+    <section id="home-gallery">
+        <!-- محتوای section چهارم -->
+        <div id="event-gallery" class="topics">
+            <h5>نگارخانه</h5>
+        </div>
+        <div class="container" style="height:92%;">
+        <div class="row" style="height:100%">
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+            <div class="gallery-media" style=" background-image: url('news11.jpg');">
+                <i class="fa fa-camera"></i>
+                <div class="gallery-media-back">
+                </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news12.jpg');">
+                    <i class="fa fa-camera"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news13.jpg');">
+                    <i class="fa fa-play-circle-o"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news14.jpg');">
+                    <i class="fa fa-play-circle-o"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news15.jpg');">
+                    <i class="fa fa-camera"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news16.jpg');">
+                    <i class="fa fa-camera"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news17.jpg');">
+                    <i class="fa fa-play-circle-o"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news18.jpg');">
+                    <i class="fa fa-camera"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4" style="padding-bottom: 20px;">
+                <div class="gallery-media" style=" background-image: url('news19.jpg');">
+                    <i class="fa fa-camera"></i>
+                    <div class="gallery-media-back">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+
+    <section id="home-library">
+        <div id="library-titr" class="topics">
+            <h5>کتابخانه</h5>
+        </div>
+        <!-- محتوای section پنجم -->
+        <div class="gallery-book-container">
+
+            <!-- کتابخانه-->
+            <div id="library" class="swiper-book-container">
+                <div class="swiper-wrapper">
+                    <!-- اسلایدها اینجا قرار می‌گیرند -->
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book1.png" alt="تصویر کتاب اول">
+
+                        <p class="swiper-book-text">مشخصات کتاب اول</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book2.png" alt="تصویر کتاب دوم">
+
+                        <p class="swiper-book-text">مشخصات کتاب دوم</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book3.png" alt="تصویر کتاب سوم">
+
+                        <p class="swiper-book-text">مشخصات کتاب سوم</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book1.png" alt="تصویر کتاب چهارم">
+
+                        <p class="swiper-book-text">مشخصات کتاب چهارم</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book2.png" alt="تصویر کتاب پنجم">
+
+                        <p class="swiper-book-text">مشخصات کتاب پنجم</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book3.png" alt="تصویر کتاب ششم">
+
+                        <p class="swiper-book-text">مشخصات کتاب ششم</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="imgbook" src="images/img/book1.png" alt="تصویر کتاب هفتم">
+
+                        <p class="swiper-book-text">مشخصات کتاب هفتم</p>
+                    </div>
+                    <!-- اسلایدهای بیشتر اینجا قرار می‌گیرند -->
+                </div>
+            </div>
+            <div class="library-btn-container">
+                <button class="event-button">بیشتر</button>
+            </div>
+        </div>
+    </section>
+    <section id="home-celebrities" style="overflow:hidden;direction: ltr;">
+        <div class="celebrity-topic">
+            <h3>دانش آموختگان چهره دانشگاه صدا و سیما</h3>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-section">
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-1.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-2.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-3.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-4.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-5.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-6.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-7.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-8.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-9.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-10.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-11.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-12.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-13.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-14.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-1.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-2.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-3.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-4.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-5.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-6.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-7.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-8.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-9.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-10.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-11.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-12.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-13.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-14.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="marquee-content2">
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-15.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-16.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-17.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-18.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-19.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-20.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-21.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-22.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-23.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-24.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-25.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-26.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-27.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-28.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-15.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-16.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-17.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-18.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-19.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-20.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-21.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-22.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-23.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-24.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-25.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-26.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-27.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-28.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="marquee-content">
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-29.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-30.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-31.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-32.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-33.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-34.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-35.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-36.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-37.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-38.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-39.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-40.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-41.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-42.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-29.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-30.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-31.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-32.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-33.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-34.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-35.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-36.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-37.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-38.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-39.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-40.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-41.jpg" alt="">
+                        </div>
+                        <div class="marquee-item">
+                            <img src="images/celebrities/cel-42.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-access">
+        <!-- محتوای section ششم -->
+        <div class="access-container">
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-internet-explorer awesome-size"></span>
+                </button>
+                <h5>سامانه گلستان</h5>
+            </div>
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-bed awesome-size"></span>
+                </button>
+                <h5>آفیش مهمان خوابگاه</h5>
+            </div>
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-cutlery awesome-size"></span>
+                </button>
+                <h5>اتوماسیون تغذیه</h5>
+            </div>
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-university awesome-size"></span>
+                </button>
+                <h5>صندوق رفاه دانشجویی</h5>
+            </div>
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-laptop awesome-size"></span>
+                </button>
+                <h5>ثبت نام دوره های مجازی</h5>
+            </div>
+            <div class="access-button-container">
+                <button>
+                    <span class="fa fa-graduation-cap awesome-size"></span>
+                </button>
+                <h5>ثبت چکیده پایان نامه ها</h5>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="home-footer">
+        <!-- قسمت footer سایت-->
+        <div class="footer-container">
+            <div class="footer-box">
+                <h5>دسترسی سریع</h5>
+                <ul>
+                    <li><a href="#">سامانه آموزش مجازی</a></li>
+                    <li><a href="#">معرفی اعضای هیئت علمی</a></li>
+                    <li><a href="#">صندوق رفاه دانشجویان</a></li>
+                    <li><a href="#">پورتال دانشجویی صندوق رفاه</a></li>
+                    <li><a href="#">پست الکترونیکی</a></li>
+                    <li><a href="#">تماس با واحد های دانشگاه</a></li>
+                    <li><a href="#">دریافت لوگوی دانشگاه</a></li>
+                    <li><a href="#">ارتباط مستقیم با رئیس</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>دانشکده ها</h5>
+                <ul>
+                    <li><a href="#">دانشکده دین و رسانه</a></li>
+                    <li><a href="#">دانشکده ارتباطات و رسانه</a></li>
+                    <li><a href="#">دانشکده تولید رادیو و تلویزیون</a></li>
+                    <li><a href="#">دانشکده فنی و مهندسی رسانه</a></li>
+                    <li><a href="#">گروه معارف و دروس اسلامی</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>معاونت ها و ستاد ها</h5>
+                <ul>
+                    <li><a href="#">معاونت فرهنگی و دانشجویی</a></li>
+                    <li><a href="#">مرکز نو آوری کارآفرینی و آموزش های آزاد</a></li>
+                    <li><a href="#">تحصیلات تکمیلی</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h5>ارتباط با ما</h5>
+                <p>
+                    نشانی: تهران خیابان ولی عصر عج، ابتدای بزرگراه نیایش، دانشگاه صدا و سیمای جمهوری اسلامی ایران<br>
+                    پست الکترونیکی: info@iribu.ac.ir<br>
+                    تلفن آموزش: 22168538-22168540<br>
+                    تلفن روابط عمومی: 22168525<br>
+                    دورنگار:22168525<br>
+                    کد پستی: 1995614317<br>
+                    صندوق پستی: 19395-1747
+                </p>
+            </div>
+            <div class="social-icon">
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-aparat"></span></a>
+                <a href="#"><span class="fa fa-eitaa"></span></a>
+                <a href="#"><span class="fa fa-baleh"></span></a>
+            </div>
+        </div>
+    </footer>
+    <!--بخش جاوا اسکریپت-->
+    <script src="js/news-slider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- اجرای اسکریپت مربوط به ایجاد اسلایدر -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-book-container', {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-defence-container', {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-top-container', {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $("#search").click(function (event) {
+                event.preventDefault();
+                $("#search-input").slideToggle("slow");
+            });
+        });
+        showDefense
+    </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        //اسکریپت مربوط به رویداد ها
+        let slideindex = 1;
+        ShowSlides(slideindex);
+
+        function PlusSlides(n) {
+            ShowSlides(slideindex += n);
+        }
+
+        function CurrentSlide(n) {
+            ShowSlides(slideindex = n);
+        }
+
+        function ShowSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eventSlides");
+            let dots = document.getElementsByClassName("dash");
+            if (n > slides.length) { slideindex = 1 }
+            if (n < 1) { slideindex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideindex - 1].style.display = "block";
+            dots[slideindex - 1].className += " active";
+        }
+        var globalIndex = 3;
+        var globaltime = 3000;
+        function autoEvent() {
+            let numb = document.getElementsByClassName("eventSlides").length;
+            for (let index = 1; index <= numb; index++) {
+
+                setTimeout(() => {
+                    CurrentSlide(index)
+                }, index * globaltime);
+            }
+        }
+        setInterval(() => {
+            autoEvent();
+        }, globalIndex * globaltime);
+
+    </script>
+    <script>
+        //اسکریپت مربوط به کتاب ها
+        let Slideindex = 1;
+        ShowSlides(Slideindex);
+
+        function PlusSlides(n) {
+            ShowSlides(Slideindex += n);
+        }
+
+        function CurrentSlide(n) {
+            ShowSlides(Slideindex = n);
+        }
+
+        function ShowSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eventSlides");
+            let dots = document.getElementsByClassName("dash");
+            if (n > slides.length) { slideindex = 1 }
+            if (n < 1) { slideindex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[Slideindex - 1].style.display = "block";
+            dots[Slideindex - 1].className += " active";
+        }
+        var globalBookIndex = 3;
+        var globalBooktime = 5000;
+        function autoBook() {
+            let numb = document.getElementsByClassName("dash").length;
+            for (let index = 1; index <= numb; index++) {
+
+                setTimeout(() => {
+                    CurrentSlide(index)
+                }, index * globaBookltime);
+            }
+        }
+        setInterval(() => {
+            autoBook();
+        }, globalBookIndex * globalBooktime);
+
+    </script>
+    <!-- اجرای اسکریپت مربوط به ایجاد اسلایدر -->
+    <script>
+
+        function showTab(tabNumber, nTab, nameTab) {
+            // مخفی کردن همه محتواهای تب‌ها
+            for (let i = 1; i <= nTab; i++) {
+                document.getElementById(nameTab + i).classList.remove("activate");
+                document.getElementById(nameTab + i).classList.add("deactivate");
+            }
+
+            // نمایش محتوای تب انتخاب شده
+            document.getElementById(nameTab + tabNumber).classList.add("activate");
+            document.getElementById(nameTab + tabNumber).classList.remove("deactivate");
+        }
+        function changeClass() {
+            if (this.classList == "active") {
+                this.classList.remove("active");
+            } else {
+                this.classList.add("active");
+            }
+        }
+    </script>
+    <script>
+        window.addEventListener('scroll', function(){
+            if(this.scrollY >= 1000){
+                document.getElementById("arrowup").style.display="block";
+            }else{
+                document.getElementById("arrowup").style.display="none";
+            } 
+            if(this.scrollY >= 200){
+                $("#menucontainer").removeClass("menu-container")
+                $("#menucontainer").addClass("menu-container-scroll")
+            }else{
+                $("#menucontainer").removeClass("menu-container-scroll")
+                $("#menucontainer").addClass("menu-container")
+            } 
+
+        })
+        function goToTop(){
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+</body>
+
+</html>
